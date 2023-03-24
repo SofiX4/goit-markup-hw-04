@@ -203,8 +203,11 @@ body {
 
 .strengths-fon {
     background-color: var(--color-cloud);
-    padding: 24px 100px;
     margin-bottom: 8px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .strengths-title {
@@ -338,14 +341,13 @@ body {
 }
 
 .customers-item {
-    width: 168px;
-    height: 88px;
+    flex-basis: auto;
 
 }
 
 .customers-link {
-    width: 100%;
-    height: 100%;
+    width: 168px;
+    height: 88px;
     display: flex;
     align-items: center;
     justify-content: center;
