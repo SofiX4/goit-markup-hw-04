@@ -113,6 +113,18 @@ body {
     letter-spacing: 0.32px;
     color: var(--NAVY-BLUE, #2E2F42);
     padding: 24px 0;
+    position: relative;
+}
+
+.menu-link:active:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: #404bbf;
+    bottom: 0;
+    left: 0;
 }
 
 .menu-link:hover,
@@ -144,6 +156,10 @@ body {
 
 .hero {
     background: var(--NAVY-BLUE, #2E2F42);
+    background-size: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -192,6 +208,18 @@ body {
 
 .benefits-item {
     width: calc((100% - 72px) / 4);
+}
+
+
+.benefits-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    padding: 24px 0;
+    margin-bottom: 8px;
 }
 
 .benefits-item-title {
@@ -261,6 +289,33 @@ body {
     text-align: center;
 }
 
+.icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.icon-item {}
+
+.icon-media-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-media-link:hover {
+    background-color: #404bbf;
+    ;
+}
+
+.icon-media {}
+
 .portfolio {}
 
 .portfolio-list {
@@ -275,6 +330,10 @@ body {
 
 }
 
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-title {
     text-align: center;
     font-size: 36px;
@@ -283,6 +342,32 @@ body {
     text-transform: capitalize;
     color: var(--NAVY-BLUE, #2E2F42);
     margin-bottom: 72px;
+
+}
+
+.portfolio-cover {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.portfolio-cover-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    position: absolute;
+    transform: translateY(100%);
+    padding: 40px 32px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-cover:hover .portfolio-cover-text {
+    transform: translateY(0);
 
 }
 
@@ -336,4 +421,17 @@ body {
 
 .logo-footer {
     color: #f4f4fd;
+}
+
+.container-div {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
