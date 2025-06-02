@@ -198,7 +198,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.64px;
     color: var(--WHITE, #FFF);
-    background: var(--IRIS, #4D5AE5);
+
     margin: 0 auto;
     border-radius: 4px;
     padding: 16px 32px;
@@ -332,7 +332,7 @@ body {
 }
 
 .icon-media-link:focus {
-    background: var(--OCEAN, #404BBF);
+    background-color: #404bbf;
 }
 
 .icon-media {
@@ -479,5 +479,5 @@ body {
 }
 
 .icon-media-link:focus.media-footer {
-    background: var(--IRIS) #31d0aa;
+    background-color: #31d0aa;
 }
