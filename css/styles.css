@@ -171,8 +171,9 @@ body {
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-size: cover;
+    background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
     margin: 0 auto;
@@ -331,7 +332,7 @@ body {
 }
 
 .icon-media-link:focus {
-    background-color: #404bbf;
+    background: var(--OCEAN, #404BBF);
 }
 
 .icon-media {
@@ -478,5 +479,5 @@ body {
 }
 
 .icon-media-link:focus.media-footer {
-    background-color: #31d0aa;
+    background: var(--IRIS) #31d0aa;
 }
