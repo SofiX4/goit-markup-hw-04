@@ -326,7 +326,10 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-media-link:hover,
+.icon-media-link:hover {
+    background-color: #404bbf;
+}
+
 .icon-media-link:focus {
     background-color: #404bbf;
 }
@@ -470,7 +473,10 @@ body {
     margin-top: 8px;
 }
 
-.icon-media-link:hover.media-footer,
+.icon-media-link:hover.media-footer {
+    background-color: #31d0aa;
+}
+
 .icon-media-link:focus.media-footer {
     background-color: #31d0aa;
 }
